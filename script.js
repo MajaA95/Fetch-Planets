@@ -1,7 +1,8 @@
 const url = "https://swapi.dev/api/planets/?page=1"
-let x = "";
+let x ="";
+let button = document.getElementById("btn");
 
-addEventListener("click", function(){
+button.addEventListener("click", function(){
     fetch(url)             
     .then(data =>{          
         data.json()         
@@ -21,9 +22,7 @@ addEventListener("click", function(){
                     })       
 })
 })
-function myfunction(){    
-  document.getElementById("displaytable").style.display = "none";   
-}
+
 
 
 
